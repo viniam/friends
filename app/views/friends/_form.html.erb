@@ -11,25 +11,26 @@
   <% end %>
   <div>
     <%= form.label :first_name, style: "display: block" %>
-    <%= form.text_field :first_name %>
+    <%= form.text_field :first_name, class:"form-control", placeholder: "John" %>
   </div>
   <div>
     <%= form.label :last_name, style: "display: block" %>
-    <%= form.text_field :last_name %>
+    <%= form.text_field :last_name, class:"form-control", placeholder: "Doe" %>
   </div>
   <div>
     <%= form.label :email, style: "display: block" %>
-    <%= form.text_field :email %>
+    <%= form.text_field :email, class:"form-control", placeholder: "john@mail.com" %>
   </div>
   <div>
     <%= form.label :phone, style: "display: block" %>
-    <%= form.text_field :phone %>
+    <%= form.text_field :phone, class:"form-control", placeholder: "12 987654321" %>
   </div>
   <div>
     <%= form.label :twitter, style: "display: block" %>
-    <%= form.text_field :twitter %>
+    <%= form.text_field :twitter, class:"form-control", placeholder: "@john.doe" %>
   </div>
+  <br/>
   <div>
-    <%= form.submit %>
+    <%= form.submit class:"btn btn-secondary" %>
   </div>
 <% end %>
